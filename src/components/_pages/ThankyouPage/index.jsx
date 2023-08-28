@@ -7,7 +7,7 @@ export default function ThankyouPage({ name, email }) {
   const router = useRouter();
 
   return (
-    <MainLayout>
+    <MainLayout bg={"bg3"}>
       <Grid
         container
         alignItems="center"
