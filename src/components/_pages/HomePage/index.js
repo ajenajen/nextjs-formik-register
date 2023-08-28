@@ -14,7 +14,7 @@ export default function HomePage() {
         justifyContent="center"
         sx={{ height: "calc(100vh - 48px)" }}
       >
-        <Grid item xs={12} md={10} lg={8} xl={6}>
+        <Grid item xs={12} md={10} lg={8}>
           <Box sx={{ textAlign: "center" }} className="fadeInUp">
             <Typography variant="h5">We Have</Typography>
             <Typography variant="h1">A Speacial Deal</Typography>

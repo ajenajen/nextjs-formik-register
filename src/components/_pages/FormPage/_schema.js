@@ -25,5 +25,8 @@ export const validationSchema = Yup.object().shape({
   phone: Yup.string()
     .required("The field is reqiued.")
     .matches(/^\d+$/, "The phone number is wrong format.")
-    .test("The phone number is max 10.", (val) => val.length === 10),
+    .test(
+      "The phone number is max 16.",
+      (val) => val.length >= 10 || val.length <= 16
+    ),
 });

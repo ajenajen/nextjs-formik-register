@@ -14,7 +14,7 @@ export default function ThankyouPage({ name, email }) {
         justifyContent="center"
         sx={{ height: "calc(100vh - 48px)" }}
       >
-        <Grid item xs={12} md={10} lg={8} xl={6} className="fadeInUp">
+        <Grid item xs={12} md={10} lg={8} className="fadeInUp">
           <Box sx={{ textAlign: "center" }}>
             <IconButton
               src="/icon-success.svg"
@@ -29,7 +29,7 @@ export default function ThankyouPage({ name, email }) {
               <br />
               {name}
             </Typography>
-            <Typography variant="body">
+            <Typography variant="body" my={3} display="block">
               Our special deal has been sent to {email}.<br />
               if you have not received, please contact us.
             </Typography>

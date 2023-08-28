@@ -27,13 +27,13 @@ body {
   background-color: #1b1d22;
 }
 .mainLayout .bg {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   background: url("/bg.png") #1b1d22 no-repeat fixed top center / auto 105%;
-  animation: fadeOutIn 0.5s linear 0s;
+  animation: fadeIn 0.5s linear 0s;
 }
 .mainLayout .bg.bg2 {
   background-image: url("/bg-2.png");
@@ -52,20 +52,18 @@ a {
 }
 
 @media screen and (min-width: 992px) {
-  body {
+  .mainLayout .bg {
     background-position: center center;
     background-size: cover;
   }
 }
 
-@keyframes fadeOutIn {
+@keyframes fadeIn {
   0% {
     opacity: 0.9;
-    transform: scale(1.02);
   }
   100% {
     opacity: 1;
-    transform: scale(1);
   }
 }
 
