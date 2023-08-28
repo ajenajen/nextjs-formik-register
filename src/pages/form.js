@@ -1,4 +1,4 @@
-import HomePage from "@/components/_pages/HomePage";
+import FormPage from "@/components/_pages/FormPage";
 
 export const getStaticProps = async () => {
   return {
@@ -6,4 +6,4 @@ export const getStaticProps = async () => {
   };
 };
 
-export default HomePage;
+export default FormPage;
